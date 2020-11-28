@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Vue</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="body">
+        <div id="calc">
+            <div id="result">
+                <div id="history">
+                    <ul>
+                        <li v-for="res in result">
+                            {{ res }}
+                        </li>
+                    </ul>
+                </div>
+                <div id="output">
+                    <p v-text="opStr"></p>
+                </div>
+            </div>
+            <div class="grid-container" >
+                <func-key @click='inputOperator("c")' symbol="C"></func-key>
+                <func-key @click='inputOperator("back")' symbol="<<<"></func-key>
+                <func-key @click='inputOperator("%")' symbol="%"></func-key>
+                <func-key @click='inputOperator("/")' symbol="/"></func-key>
+                <num-key @click='inputNumber(7)' num="7"></num-key>
+                <num-key @click='inputNumber(8)' num="8"></num-key>
+                <num-key @click='inputNumber(9)' num="9"></num-key>
+                <func-key @click='inputOperator("x")' symbol="X"></func-key>
+                <num-key @click='inputNumber(4)' num="4"></num-key>
+                <num-key @click='inputNumber(5)' num="5"></num-key>
+                <num-key @click='inputNumber(6)' num="6"></num-key>
+                <func-key @click='inputOperator("-")' symbol="-"></func-key>
+                <num-key @click='inputNumber(1)' num="1"></num-key>
+                <num-key @click='inputNumber(2)' num="2"></num-key>
+                <num-key @click='inputNumber(3)' num="3"></num-key>
+                <func-key @click='inputOperator("+")' symbol="+"></func-key>
+                <func-key @click='inputOperator("h")' symbol="H"></func-key>
+                <num-key @click='inputNumber(0)' num="0"></num-key>
+                <num-key @click='inputNumber(".")' num="."></num-key>
+                <func-key @click='inputOperator("=")' symbol="="></func-key>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="main.js"></script>
+</body>
+</html>
