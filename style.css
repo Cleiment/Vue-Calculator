@@ -14,7 +14,7 @@ body{
 
 #calc{
     background-color: #1f1f1f;
-    width: 364px;
+    width: 324px;
     padding: 25px 5px;
     border-radius: 10px;
     display: flex;
@@ -28,8 +28,8 @@ body{
     grid-template-columns: auto;
     grid-template-rows: 75% 25%;
     background-color: white;
-    height: 160px;
-    width: 295px;
+    height: 120px;
+    width: 255px;
     border-radius: 5px;
     margin-bottom: 10px;
     text-align: right;
@@ -57,19 +57,18 @@ li{
     list-style: none;
 }
 
-
 .grid-container{
     display: grid;
     grid-template-columns: auto auto auto auto;
-    width: 350px;
+    width: 310px;
     margin: 5px auto -5px;
     justify-content: center;
 }
 
 .keys{
-    width: 76px;
-    height: 76px;
-    font-size: 20px;
+    width: 66px;
+    height: 66px;
+    font-size: 18px;
     margin: 5px;
     border-radius: 10px;
     border: 0;
